@@ -22,4 +22,5 @@ a:hover{text-decoration:underline}
 footer.site{margin:60px 0 30px;padding-top:24px;border-top:1px solid #ececec;color:#888;font-size:14px;line-height:1.6}
 footer.site a{color:#888}
 img{max-width:100%;border-radius:8px;margin:16px 0}
+img.cover{width:100%;aspect-ratio:16/9;object-fit:cover;margin:8px 0 24px;border-radius:12px}
 hr{border:none;border-top:1px solid #ececec;margin:32px 0}
