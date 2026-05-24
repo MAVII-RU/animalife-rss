@@ -9,7 +9,52 @@
     <description>Медиа AnimaLife: статьи о жизни с кошками и собаками, AI-переводчике звуков, ветеринарии, уходе. Бесплатное AI-приложение в Telegram и MAX мессенджере.</description>
     <language>ru</language>
     <atom:link href="https://mavii-ru.github.io/animalife-rss/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 24 May 2026 14:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 20:00:00 +0300</lastBuildDate>
+
+    <item>
+      <title>Первый визит котёнка к ветеринару: что проверят, какие прививки и как подготовиться</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/kitten-first-vet-visit/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/kitten-first-vet-visit/</guid>
+      <pubDate>Sun, 24 May 2026 20:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description>Что входит в первый осмотр котёнка, схема вакцинации, анализы, обработка от паразитов и как подготовить котёнка к визиту без стресса. Полный разбор для новых хозяев.</description>
+    </item>
+
+    <item>
+      <title>Тревога разлуки у собаки: симптомы, что нельзя делать и как приучить оставаться одной</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/dog-anxiety-separation/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/dog-anxiety-separation/</guid>
+      <pubDate>Sun, 24 May 2026 19:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description>Тревога разлуки — не каприз, а расстройство. Симптомы, ошибки хозяев, которые усугубляют ситуацию, и пошаговый план десенситизации. По науке, без мифов.</description>
+    </item>
+
+    <item>
+      <title>Как вычёсывать кошку дома: инструменты, периодичность, что делать с колтунами</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/cat-grooming-at-home/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/cat-grooming-at-home/</guid>
+      <pubDate>Sun, 24 May 2026 18:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description>Какие инструменты нужны по типу шерсти, как часто вычёсывать, техника работы с колтунами и когда нужен грумер. Без стресса для кошки и хозяина.</description>
+    </item>
+
+    <item>
+      <title>Собака ревнует: 7 признаков и как не разрушить отношения с питомцем</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/dog-jealousy-signs/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/dog-jealousy-signs/</guid>
+      <pubDate>Sun, 24 May 2026 17:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description>Ревность у собак — доказанный научный факт. Семь признаков, чем это отличается от тревоги разлуки, чего нельзя делать и как выстроить баланс внимания.</description>
+    </item>
+
+    <item>
+      <title>Мочекаменная болезнь у котов: как распознать, что делать до врача и как кормить после</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/cat-urinary-disease/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/cat-urinary-disease/</guid>
+      <pubDate>Sun, 24 May 2026 16:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description>МКБ у котов — одна из главных причин гибели. Как распознать первые симптомы, что делать до клиники, экстренные признаки обструкции и правильное питание после лечения.</description>
+    </item>
 
     <item>
       <title>Как определить породу беспородной собаки: внешность, поведение, ДНК-тест</title>
