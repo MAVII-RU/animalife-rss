@@ -9,7 +9,52 @@
     <description>Медиа AnimaLife: статьи о жизни с кошками и собаками, AI-переводчике звуков, ветеринарии, уходе. Бесплатное AI-приложение в Telegram и MAX мессенджере.</description>
     <language>ru</language>
     <atom:link href="https://mavii-ru.github.io/animalife-rss/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 22 May 2026 14:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 14:00:00 +0300</lastBuildDate>
+
+    <item>
+      <title>Как определить породу беспородной собаки: внешность, поведение, ДНК-тест</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/mixed-breed-dog-traits/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/mixed-breed-dog-traits/</guid>
+      <pubDate>Sun, 24 May 2026 14:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description>Взяли собаку из приюта или подобрали на улице? По ушам, хвосту, размеру и поведению можно предположить предков. А ДНК-тест даёт точный ответ — рассказываем, как это работает и зачем это нужно.</description>
+    </item>
+
+    <item>
+      <title>Признаки боли у кошки: 9 сигналов, которые легко не заметить</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/cat-pain-signs/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/cat-pain-signs/</guid>
+      <pubDate>Sun, 24 May 2026 13:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description>Кошки скрывают боль — это инстинкт выживания. Как распознать страдание по позе, мимике, поведению и звукам. Девять признаков, которые нельзя игнорировать.</description>
+    </item>
+
+    <item>
+      <title>Кошка в течке: как долго, что делать, когда стерилизовать — полный разбор</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/cat-in-heat/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/cat-in-heat/</guid>
+      <pubDate>Sun, 24 May 2026 12:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description>Кошка орёт ночью, катается по полу, не ест. Это течка. Как долго длится, что реально помогает без гормонов, почему таблетки опасны и когда идти на стерилизацию.</description>
+    </item>
+
+    <item>
+      <title>Первый корм для щенка: как выбрать, чем кормить в 2, 3 и 6 месяцев</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/puppy-first-food/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/puppy-first-food/</guid>
+      <pubDate>Sun, 24 May 2026 11:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description>Неправильный корм в первые месяцы — и щенок вырастает с проблемами суставов и ЖКТ. Как читать состав, что отличает корм для щенков от взрослого, и как меняется схема кормления по возрасту.</description>
+    </item>
+
+    <item>
+      <title>Чипирование собаки: зачем, как больно, сколько стоит и что даёт в 2026</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/dog-chip-implant/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/dog-chip-implant/</guid>
+      <pubDate>Sun, 24 May 2026 10:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description>Чип — не GPS и не слежка. Это 15-значный номер под кожей, который работает 25 лет. Зачем ставить, как проходит процедура, сколько стоит, что изменил ФЗ-498. Всё по фактам.</description>
+    </item>
 
     <item>
       <title>Я записал, что говорит мой кот — приложение AnimaLife расшифровало мяуканье</title>
