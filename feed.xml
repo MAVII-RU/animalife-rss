@@ -9,7 +9,67 @@
     <description>Медиа AnimaLife: статьи о жизни с кошками и собаками, AI-переводчике звуков, ветеринарии, уходе. Бесплатное AI-приложение в Telegram и MAX мессенджере.</description>
     <language>ru</language>
     <atom:link href="https://mavii-ru.github.io/animalife-rss/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 24 May 2026 20:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 14:00:00 +0300</lastBuildDate>
+
+    <item>
+      <title>График прививок для кошки от 2 месяцев до старости: что, когда, зачем</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/cat-vaccination-schedule/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/cat-vaccination-schedule/</guid>
+      <pubDate>Tue, 26 May 2026 14:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description><![CDATA[Полный маршрут вакцинации кошки: от первой прививки котёнку в 8 недель до ревакцинации пожилой кошки. Какие вакцины обязательны, какие по ситуации, как подготовить кошку и что делать при реакции. Узнайте точный график для вашей кошки в AnimaLife: <a href="https://t.me/animalifebot?start=dzen_cat-vaccination-schedule_feed">в Telegram →</a>]]></description>
+      <figure>
+        <img src="https://mavii-ru.github.io/animalife-rss/articles/cat-vaccination-schedule/images/cover.jpg" alt="График прививок для кошки" />
+      </figure>
+    </item>
+
+    <item>
+      <title>Защита собаки от клещей и блох в сезон 2026: средства, схемы, ошибки</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/dog-ticks-fleas-protection/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/dog-ticks-fleas-protection/</guid>
+      <pubDate>Tue, 26 May 2026 13:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description><![CDATA[Клещи активны с марта по ноябрь. Какие средства реально работают, как выстроить схему защиты, самые частые ошибки хозяев и что делать, если клещ всё же присосался. Если нашли клеща — спросите vet-AI в AnimaLife: <a href="https://t.me/animalifebot?start=dzen_dog-ticks-fleas-protection_feed">в Telegram →</a>]]></description>
+      <figure>
+        <img src="https://mavii-ru.github.io/animalife-rss/articles/dog-ticks-fleas-protection/images/cover.jpg" alt="Защита собаки от клещей и блох" />
+      </figure>
+    </item>
+
+    <item>
+      <title>Ядовитые растения для собак на даче: 15 опасных видов и что делать при отравлении</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/dog-toxic-plants-dacha/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/dog-toxic-plants-dacha/</guid>
+      <pubDate>Tue, 26 May 2026 12:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description><![CDATA[Тисс, ландыш, безвременник, борщевик — дача полна опасностей для собак. Список 15 токсичных растений, симптомы отравления по каждому и первая помощь до ветеринара. Собака что-то съела? Оцените риск в AnimaLife: <a href="https://t.me/animalifebot?start=dzen_dog-toxic-plants-dacha_feed">в Telegram →</a>]]></description>
+      <figure>
+        <img src="https://mavii-ru.github.io/animalife-rss/articles/dog-toxic-plants-dacha/images/cover.jpg" alt="Ядовитые растения для собак на даче" />
+      </figure>
+    </item>
+
+    <item>
+      <title>Весенняя линька кошки: норма, патология, чек-лист</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/cat-spring-shedding/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/cat-spring-shedding/</guid>
+      <pubDate>Tue, 26 May 2026 11:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description><![CDATA[Май — пик весенней линьки. Как отличить нормальную смену шерсти от алопеции, чем помочь кошке, что говорит о болезни и почему фурминатор не решает всё. Полный чек-лист по уходу. Непонятно — спросите vet-AI в AnimaLife: <a href="https://t.me/animalifebot?start=dzen_cat-spring-shedding_feed">в Telegram →</a>]]></description>
+      <figure>
+        <img src="https://mavii-ru.github.io/animalife-rss/articles/cat-spring-shedding/images/cover.jpg" alt="Весенняя линька кошки" />
+      </figure>
+    </item>
+
+    <item>
+      <title>Тепловой удар у собаки летом: признаки, первая помощь, профилактика</title>
+      <link>https://mavii-ru.github.io/animalife-rss/articles/dog-heatstroke-summer/</link>
+      <guid isPermaLink="true">https://mavii-ru.github.io/animalife-rss/articles/dog-heatstroke-summer/</guid>
+      <pubDate>Tue, 26 May 2026 10:00:00 +0300</pubDate>
+      <dc:creator>AnimaLife</dc:creator>
+      <description><![CDATA[Тепловой удар убивает собаку за 20-30 минут. Как распознать перегрев по ранним и критическим симптомам, что делать в первые 10 минут, летний чек-лист безопасности на даче. Собаке стало плохо в жару? Напишите в AnimaLife: <a href="https://t.me/animalifebot?start=dzen_dog-heatstroke-summer_feed">в Telegram →</a>]]></description>
+      <figure>
+        <img src="https://mavii-ru.github.io/animalife-rss/articles/dog-heatstroke-summer/images/cover.jpg" alt="Тепловой удар у собаки летом" />
+      </figure>
+    </item>
 
     <item>
       <title>Первый визит котёнка к ветеринару: что проверят, какие прививки и как подготовиться</title>
