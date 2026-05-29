@@ -195,4 +195,29 @@
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://mavii-ru.github.io/animalife-rss/articles/cat-spaying-guide/</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://mavii-ru.github.io/animalife-rss/articles/cat-summer-heat/</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://mavii-ru.github.io/animalife-rss/articles/dog-fear-fireworks-thunder/</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://mavii-ru.github.io/animalife-rss/articles/dog-leash-pulling/</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://mavii-ru.github.io/animalife-rss/articles/pet-deworming-guide/</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
