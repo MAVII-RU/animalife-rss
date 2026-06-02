@@ -148,6 +148,11 @@ def build_item(slug, art_dir, prev, now):
     body = clean_body(extract_body(doc), slug)
     link = f"{BASE}/articles/{slug}/"
     cov_url, cov_len = cover_enclosure(slug, art_dir)
+    # cache-bust cover URL by file size so Dzen / caches re-fetch when the image changes
+    if cov_url:
+        cov_url = f"{cov_url}?v={cov_len}"
+        body = body.replace(f"{BASE}/articles/{slug}/images/cover.jpg",
+                            f"{BASE}/articles/{slug}/images/cover.jpg?v={cov_len}")
 
     parts = [
         "    <item>",
