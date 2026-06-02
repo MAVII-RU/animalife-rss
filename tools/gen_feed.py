@@ -122,6 +122,8 @@ def absolutize(body, slug):
 
 def clean_body(body, slug):
     body = absolutize(body, slug)
+    # UTM: feed (Dzen) copies carry source=dzen; the on-site HTML keeps source=github
+    body = re.sub(r'(https://t\.me/animalifebot)\?start=[a-z0-9_]+', r'\1?start=dzen', body)
     # CTA divs -> blockquote (Dzen-friendly); these are the only <div> in articles
     body = body.replace('<div class="cta">', "<blockquote>").replace("</div>", "</blockquote>")
     # drop class attributes (cosmetic, Dzen ignores them)
