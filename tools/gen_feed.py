@@ -25,8 +25,36 @@ from datetime import datetime, timezone, timedelta
 from email.utils import format_datetime, parsedate_to_datetime
 from xml.sax.saxutils import escape
 
+try:
+    from PIL import Image
+    _HAS_PIL = True
+except Exception:
+    _HAS_PIL = False
+
 BASE = "https://mavii-ru.github.io/animalife-rss"
 MSK = timezone(timedelta(hours=3))
+
+# Yandex Dzen draws its own grey placeholder instead of the card cover when the
+# image is narrower than ~1280px. Upscale any undersized cover to MIN_COVER_W so
+# every card renders. Aspect is preserved; the cache-buster (?v=<filesize>) updates
+# automatically once the file changes, so Dzen re-fetches the fixed image.
+MIN_COVER_W = 1920
+
+
+def ensure_cover_size(cov):
+    """Upscale a cover narrower than MIN_COVER_W in place. No-op without PIL."""
+    if not _HAS_PIL:
+        return
+    try:
+        with Image.open(cov) as im:
+            w, h = im.size
+            if w >= MIN_COVER_W:
+                return
+            nh = round(h * MIN_COVER_W / w)
+            im.convert("RGB").resize((MIN_COVER_W, nh), Image.LANCZOS).save(
+                cov, "JPEG", quality=90)
+    except Exception:
+        pass
 
 CHANNEL = {
     "title": "AnimaLife — про кошек и собак",
@@ -136,6 +164,7 @@ def clean_body(body, slug):
 def cover_enclosure(slug, art_dir):
     cov = os.path.join(art_dir, "images", "cover.jpg")
     if os.path.exists(cov):
+        ensure_cover_size(cov)
         return f"{BASE}/articles/{slug}/images/cover.jpg", os.path.getsize(cov)
     return None, 0
 
