@@ -152,13 +152,35 @@ def clean_body(body, slug):
     body = absolutize(body, slug)
     # UTM: feed (Dzen) copies carry source=dzen; the on-site HTML keeps source=github
     body = re.sub(r'(https://t\.me/animalifebot)\?start=[a-z0-9_]+', r'\1?start=dzen', body)
-    # CTA divs -> blockquote (Dzen-friendly); these are the only <div> in articles
-    body = body.replace('<div class="cta">', "<blockquote>").replace("</div>", "</blockquote>")
-    # drop class attributes (cosmetic, Dzen ignores them)
-    body = re.sub(r'\s+class="[^"]*"', "", body)
+    # CTA cards -> Dzen-friendly blockquote (Dzen strips the button chrome anyway; keep
+    # the bold title, text and links). The CTA is the only <div> in articles and has no
+    # nested div, so .*? stops at its own </div>.
+    body = re.sub(r'<div class="cta"[^>]*>(.*?)</div>', r'<blockquote>\1</blockquote>', body, flags=re.S)
+    # drop class/style attributes (cosmetic, Dzen ignores/sanitizes them)
+    body = re.sub(r'\s+(?:class|style)="[^"]*"', "", body)
     # collapse excess blank lines
     body = re.sub(r"\n{3,}", "\n\n", body).strip()
     return body
+
+
+def ensure_cover(slug, art_dir, title):
+    """Best-effort self-heal: if an article has no cover, generate a real AI one now
+    (Vertex/Nano Banana, animal-verified) so a coverless card NEVER surfaces on Dzen.
+    Returns True if a cover exists afterwards. Safe no-op on any failure (then the
+    article is simply held back until a cover is produced)."""
+    cov = os.path.join(art_dir, "images", "cover.jpg")
+    if os.path.exists(cov):
+        return True
+    try:
+        sys.path.insert(0, "/home/max/MAVII_AGENTS/scripts/site_publish")
+        from ai_cover import generate
+        os.makedirs(os.path.dirname(cov), exist_ok=True)
+        if generate(slug, title, cov):
+            sys.stderr.write(f"[gen_feed] self-healed missing cover: {slug}\n")
+            return True
+    except Exception as e:
+        sys.stderr.write(f"[gen_feed] cover gen failed for {slug}: {e}\n")
+    return os.path.exists(cov)
 
 
 def cover_enclosure(slug, art_dir):
@@ -173,8 +195,10 @@ def build_item(slug, art_dir, prev, now):
     doc = read(os.path.join(art_dir, "index.html"))
     pub = resolve_pubdate(slug, art_dir, prev)
     if pub > now:
-        return None, pub  # future-dated: surface later
+        return None, pub, "future"  # future-dated: surface later
     title = extract_title(doc, slug)
+    if not ensure_cover(slug, art_dir, title):
+        return None, pub, "nocover"  # hold back: never surface a blank Dzen card
     desc = extract_description(doc)
     body = clean_body(extract_body(doc), slug)
     link = f"{BASE}/articles/{slug}/"
@@ -198,7 +222,7 @@ def build_item(slug, art_dir, prev, now):
         parts.append(f'      <enclosure url="{cov_url}" length="{cov_len}" type="image/jpeg"/>')
     parts.append(f"      <content:encoded><![CDATA[{body}]]></content:encoded>")
     parts.append("    </item>")
-    return "\n".join(parts), pub
+    return "\n".join(parts), pub, "ok"
 
 
 def main():
@@ -209,13 +233,17 @@ def main():
 
     rows = []
     skipped_future = 0
+    nocover = []
     for slug in sorted(os.listdir(art_root)):
         art_dir = os.path.join(art_root, slug)
         if not os.path.isfile(os.path.join(art_dir, "index.html")):
             continue
-        item, pub = build_item(slug, art_dir, prev, now)
-        if item is None:
+        item, pub, status = build_item(slug, art_dir, prev, now)
+        if status == "future":
             skipped_future += 1
+            continue
+        if status == "nocover":
+            nocover.append(slug)
             continue
         rows.append((pub, item))
 
@@ -242,7 +270,10 @@ def main():
 """
     with open(feed_path, "w", encoding="utf-8") as f:
         f.write(feed)
-    print(f"feed.xml written: {len(rows)} items, {skipped_future} future-dated skipped")
+    msg = f"feed.xml written: {len(rows)} items, {skipped_future} future-dated skipped"
+    if nocover:
+        msg += f", {len(nocover)} held back (no cover): {', '.join(nocover)}"
+    print(msg)
 
 
 if __name__ == "__main__":
