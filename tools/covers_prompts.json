@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02",
+  "generated_at": "2026-06-06",
   "note": "Prompts ready. API quota exhausted (free tier RPD=0). Retry after UTC midnight (07:00 MSK). Run: python3 tools/generate_covers_batch.py",
   "covers": [
     {
@@ -31,6 +31,66 @@
       "output": "articles/dog-rescue-dog-adaptation/images/cover.jpg",
       "model": "gemini-3-pro-image-preview",
       "prompt": "A medium-sized mixed-breed dog with beige and sand-colored fur, lying curled on a new soft dog bed in the corner of a minimalist modern apartment, large expressive sad but hopeful eyes looking directly at camera, a brand new red leash coiled neatly beside the bed and a fresh water bowl just within frame. Light: soft diffused overcast light from a wide window, gentle and melancholic atmosphere. Camera: 50mm lens, f/2.0, dog's eyes and face razor sharp, room softly out of focus. Composition: dog centered slightly left, leash and bowl in right foreground, room opens to the right with empty space suggesting new beginning. Style: editorial documentary photography, ultra realistic, emotionally resonant. Color: warm beige and sand tones, muted interior neutrals, touches of red from leash. No text, no letters, no watermarks, no logos, no AI artifacts. 16:9 cinematic crop."
+    },
+    {
+      "slug": "cat-sleeps-on-laptop",
+      "output": "articles/cat-sleeps-on-laptop/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Ginger tabby cat curled up asleep on an open laptop keyboard in a cozy home office, warm soft morning light through window, blurred notebook and coffee mug background, photorealistic editorial style, shallow depth of field, no text"
+    },
+    {
+      "slug": "cat-introducing-to-dog",
+      "output": "articles/cat-introducing-to-dog/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Domestic cat and friendly mid-sized dog separated by a white baby gate inside a bright apartment hallway, both calm and curious, sniffing through the gate, warm natural light, photorealistic editorial style, no text"
+    },
+    {
+      "slug": "cat-knocks-things-off-shelves",
+      "output": "articles/cat-knocks-things-off-shelves/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Playful gray cat on a wooden table reaching paw toward a ceramic mug near the edge, mischievous curious expression, soft daytime kitchen light, photorealistic editorial style, shallow depth of field, no text"
+    },
+    {
+      "slug": "cat-eye-discharge-watch",
+      "output": "articles/cat-eye-discharge-watch/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Close-up three-quarter portrait of a healthy adult cat with clear bright eyes, soft natural side light, fine fur detail around eyes, calm expression, photorealistic editorial photography, no text"
+    },
+    {
+      "slug": "dog-jumping-on-guests",
+      "output": "articles/dog-jumping-on-guests/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Medium-sized friendly dog standing up on hind legs greeting a guest in winter coat with shopping bags in apartment hallway, warm indoor light, photorealistic editorial style, no text"
+    },
+    {
+      "slug": "dog-resource-guarding-food",
+      "output": "articles/dog-resource-guarding-food/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Mid-sized dog lying next to a metal food bowl on a kitchen floor, alert protective gaze toward camera, full bowl of kibble, warm evening kitchen light, photorealistic editorial style, no aggression, no text"
+    },
+    {
+      "slug": "dog-counter-surfing-stop",
+      "output": "articles/dog-counter-surfing-stop/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Large dog stretching nose up toward kitchen countertop with bread loaf and vegetables on it, evening kitchen with warm pendant light, photorealistic editorial style, shallow depth of field, no text"
+    },
+    {
+      "slug": "dog-backyard-pool-safety",
+      "output": "articles/dog-backyard-pool-safety/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Happy mid-sized dog standing beside a small inflatable garden pool in a sunny dacha backyard, green lawn and wooden fence in background, summer afternoon light, photorealistic editorial style, no text"
+    },
+    {
+      "slug": "pet-bbq-picnic-safety",
+      "output": "articles/pet-bbq-picnic-safety/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Family picnic blanket and grill at a country dacha, friendly dog and cat resting in shade nearby, water bowl on grass, warm summer evening light, photorealistic editorial style, no humans close-up, no text"
+    },
+    {
+      "slug": "pet-dacha-first-week",
+      "output": "articles/pet-dacha-first-week/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Russian wooden dacha veranda with potted flowers, a cat lounging on the steps and a dog exploring grass in foreground, warm summer afternoon light, photorealistic editorial style, no text"
     }
   ]
 }
