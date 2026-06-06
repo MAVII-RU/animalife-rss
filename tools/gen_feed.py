@@ -21,6 +21,7 @@ import os
 import re
 import sys
 import html
+import urllib.request
 from datetime import datetime, timezone, timedelta
 from email.utils import format_datetime, parsedate_to_datetime
 from xml.sax.saxutils import escape
@@ -183,6 +184,24 @@ def ensure_cover(slug, art_dir, title):
     return os.path.exists(cov)
 
 
+def cover_live(slug):
+    """True if the cover is already fetchable on GitHub Pages (HTTP 200).
+
+    The ultimate guard against grey Dzen cards: even when a cover exists locally and
+    its enclosure URL is in the feed, Dzen imports a GREY card (and caches it forever)
+    if it crawls the feed before that cover has propagated to Pages. So a NEWLY
+    surfacing item is held back until its cover URL actually resolves; it surfaces on
+    the next tick (≤1h later) once the cover is live. Already-surfaced items are kept.
+    """
+    url = f"{BASE}/articles/{slug}/images/cover.jpg"
+    try:
+        req = urllib.request.Request(url, method="HEAD")
+        with urllib.request.urlopen(req, timeout=8) as r:
+            return r.status == 200
+    except Exception:
+        return False
+
+
 def cover_enclosure(slug, art_dir):
     cov = os.path.join(art_dir, "images", "cover.jpg")
     if os.path.exists(cov):
@@ -199,6 +218,11 @@ def build_item(slug, art_dir, prev, now):
     title = extract_title(doc, slug)
     if not ensure_cover(slug, art_dir, title):
         return None, pub, "nocover"  # hold back: never surface a blank Dzen card
+    # A newly surfacing item must have its cover already LIVE on Pages, or Dzen
+    # caches a grey card forever. Held-back items surface next tick once the cover
+    # (committed+pushed this run by publish_tick) has propagated. prev = already live.
+    if slug not in prev and not cover_live(slug):
+        return None, pub, "nocover"
     desc = extract_description(doc)
     body = clean_body(extract_body(doc), slug)
     link = f"{BASE}/articles/{slug}/"
