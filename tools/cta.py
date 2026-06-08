@@ -85,6 +85,56 @@ def render(slug, n=0):
 CTA_RE = re.compile(r'<div class="cta"[^>]*>.*?</div>', re.S)
 
 
+# --- Subscribe-to-channel CTA (Dzen audience growth) ----------------------------
+# Distinct from the app-install CTA above: this one asks the reader to SUBSCRIBE to
+# the Dzen channel so the channel grows its own audience (the real bottleneck — Dzen
+# only distributes a channel that retains & gains subscribers). No external link: in
+# the Dzen reader the native «Подписаться» button sits right under the article, so a
+# verbal nudge converts; on the site it's a soft reminder card. Light card so it does
+# not compete visually with the bright orange app CTA. clean_body() in gen_feed wraps
+# class="subcta" into a Dzen <blockquote> just like the app CTA.
+SUB_TITLE = "Понравился разбор?"
+SUB_TEXT = ("Подпишитесь на канал — каждый день разбираем по одному тревожному "
+            "симптому у кошек и собак: что в пределах нормы, а когда пора к врачу. "
+            "Подпишитесь, чтобы не пропустить разбор, который может спасти здоровье "
+            "вашего питомца.")
+
+
+def render_subscribe():
+    """Return the subscribe-to-channel nudge block (one per article, at the end)."""
+    return (
+        '<div class="subcta" style="background:#FFF6EE;border:2px solid #FF8A2B;'
+        'border-radius:16px;padding:20px 22px;margin:34px 0 8px">\n'
+        f'<p style="margin:0 0 6px;font-size:18px;line-height:1.3;color:#E8590C;'
+        f'font-weight:800"><b style="color:#E8590C">🐾 {SUB_TITLE}</b></p>\n'
+        f'<p style="margin:0;font-size:15.5px;line-height:1.55;color:#3a3a3a">{SUB_TEXT}</p>\n'
+        '</div>'
+    )
+
+
+SUBCTA_RE = re.compile(r'<div class="subcta"[^>]*>.*?</div>', re.S)
+
+
+def ensure_subscribe(doc):
+    """Ensure exactly one subscribe nudge sits at the END of the article body.
+    Idempotent: replaces an existing one (refreshes copy) or appends before the
+    article's closing wrapper. Returns (new_doc, present_bool)."""
+    block = render_subscribe()
+    if SUBCTA_RE.search(doc):
+        return SUBCTA_RE.sub(lambda _m: block, doc, count=1), True
+    # Append after the last app CTA if present, else before </article>/</body>.
+    last = None
+    for m in CTA_RE.finditer(doc):
+        last = m
+    if last:
+        return doc[:last.end()] + "\n" + block + doc[last.end():], True
+    for tag in ("</article>", "</main>", "</body>"):
+        i = doc.rfind(tag)
+        if i != -1:
+            return doc[:i] + block + "\n" + doc[i:], True
+    return doc + "\n" + block, True
+
+
 def upgrade_html(slug, doc):
     """Replace every CTA block in an article's HTML with a freshly rendered bold CTA.
     Returns (new_doc, count)."""

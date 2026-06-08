@@ -157,6 +157,8 @@ def clean_body(body, slug):
     # the bold title, text and links). The CTA is the only <div> in articles and has no
     # nested div, so .*? stops at its own </div>.
     body = re.sub(r'<div class="cta"[^>]*>(.*?)</div>', r'<blockquote>\1</blockquote>', body, flags=re.S)
+    # subscribe-to-channel nudge -> same Dzen-friendly blockquote (no nested div)
+    body = re.sub(r'<div class="subcta"[^>]*>(.*?)</div>', r'<blockquote>\1</blockquote>', body, flags=re.S)
     # drop class/style attributes (cosmetic, Dzen ignores/sanitizes them)
     body = re.sub(r'\s+(?:class|style)="[^"]*"', "", body)
     # collapse excess blank lines

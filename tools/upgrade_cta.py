@@ -27,15 +27,17 @@ def main(slugs):
             continue
         doc = open(p, encoding="utf-8").read()
         new, n = cta.upgrade_html(slug, doc)
-        if n and new != doc:
+        # also ensure a subscribe-to-channel nudge at the end (Dzen audience growth)
+        new, _ = cta.ensure_subscribe(new)
+        if new != doc:
             open(p, "w", encoding="utf-8").write(new)
             total_files += 1
             total_cta += n
-            print(f"upgraded {slug}: {n} CTA(s)")
+            print(f"upgraded {slug}: {n} app CTA(s) + subscribe nudge")
         elif n:
-            print(f"unchanged {slug}: {n} CTA(s) already current")
+            print(f"unchanged {slug}: {n} CTA(s) + subscribe already current")
         else:
-            print(f"no CTA found: {slug}")
+            print(f"subscribe nudge ensured (no app CTA): {slug}")
     print(f"\nDONE: {total_cta} CTA blocks across {total_files} files updated")
 
 
