@@ -91,6 +91,66 @@
       "output": "articles/pet-dacha-first-week/images/cover.jpg",
       "model": "gemini-3-pro-image-preview",
       "prompt": "Russian wooden dacha veranda with potted flowers, a cat lounging on the steps and a dog exploring grass in foreground, warm summer afternoon light, photorealistic editorial style, no text"
+    },
+    {
+      "slug": "cat-slow-blink-bonding",
+      "output": "articles/cat-slow-blink-bonding/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Close-up portrait of a tabby cat with half-closed eyes, doing a slow blink, lying on a soft linen blanket near a sunny window. Light: gentle diffused morning window light from the right, warm golden tones, soft bokeh living room background. Camera: 85mm portrait lens, f/1.8, very shallow depth of field, eyes in soft focus. Composition: face fills two-thirds of frame, negative space to the left, slightly tilted head, intimate eye contact. Style: editorial magazine photography, ultra realistic, National Geographic warmth. Color palette: warm cream, amber, soft caramel. No text, no watermarks, no logos, no AI artifacts, no humans. 16:9 cinematic crop."
+    },
+    {
+      "slug": "dog-howl-sirens-music",
+      "output": "articles/dog-howl-sirens-music/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Medium shot of a Pembroke Welsh Corgi or Siberian Husky mid-howl, head raised, mouth open in a perfect O shape, sitting on a wooden floor in a cozy living room. Light: warm sunset light streaming through a side window, golden hour glow. Camera: 50mm, f/2.8, shallow depth of field, dog in sharp focus. Composition: dog centered, head slightly back, expressive face, soft blurred interior behind. Style: editorial magazine photography, ultra realistic, charming candid moment. Color palette: warm amber, honey, soft wood tones. No text, no watermarks, no logos, no AI artifacts, no humans. 16:9 cinematic crop."
+    },
+    {
+      "slug": "cat-paper-sitting-magic",
+      "output": "articles/cat-paper-sitting-magic/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "A tabby or orange cat sitting perfectly upright on a single sheet of white paper placed on a wooden desk or table, looking directly at camera with dignified posture. Light: soft diffused side light from a nearby window, gentle shadows on wood. Camera: slightly elevated angle (45 degrees from above), 50mm, f/2.8. Composition: cat on paper in center-left, some negative space on the right, natural wood texture visible. Style: editorial magazine photography, ultra realistic, warm and whimsical. Color palette: warm wood browns, soft white paper, cat fur earth tones. No text, no watermarks, no logos, no AI artifacts, no humans, no writing on paper. 16:9 cinematic crop."
+    },
+    {
+      "slug": "dog-sniff-walk-decompression",
+      "output": "articles/dog-sniff-walk-decompression/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "A Labrador or Border Collie on a long loose leash sniffing lush green grass along a forest trail at golden hour, nose to the ground, tail raised. Light: warm backlit golden hour sunlight filtering through trees, rim lighting on dog's fur, lens flare. Camera: 35mm, f/2.8, shallow depth of field, dog in focus, bokeh forest behind. Composition: dog in lower third, path leading into soft bokeh background, leash gently curving out of frame. Style: editorial outdoor photography, ultra realistic, peaceful and serene. Color palette: golden amber, deep green, warm brown. No text, no watermarks, no logos, no AI artifacts, no humans visible. 16:9 cinematic crop."
+    },
+    {
+      "slug": "cat-window-chattering-birds",
+      "output": "articles/cat-window-chattering-birds/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "A cat sitting on a windowsill, wide eyes and mouth slightly open mid-chatter, intently watching blurred bird silhouettes on a branch outside the window. Light: warm morning sunlight coming through window, cat backlit with warm rim glow, soft interior light. Camera: 85mm, f/2.0, cat in focus, outside window heavily blurred. Composition: cat in profile on the right third, birds as soft bokeh shapes on the left, window frame visible. Style: editorial magazine photography, ultra realistic, magical observational moment. Color palette: warm golden morning light, soft cream interior, muted greens outside. No text, no watermarks, no logos, no AI artifacts, no humans. 16:9 cinematic crop."
+    },
+    {
+      "slug": "dog-paw-shake-trick-training",
+      "output": "articles/dog-paw-shake-trick-training/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "Close-up of a Jack Russell Terrier or mixed breed small dog placing its paw into an open human hand, a classic handshake trick. Light: warm indoor light, soft window light from the side, cozy interior. Camera: 50mm macro, f/2.0, extremely shallow depth of field, paw and hand in sharp focus. Composition: hands and paw filling most of the frame, dog slightly blurred in background with happy expression visible. Style: editorial magazine photography, ultra realistic, heartwarming connection. Color palette: warm skin tones, soft beige, golden light. No text, no watermarks, no logos, no AI artifacts. 16:9 cinematic crop."
+    },
+    {
+      "slug": "cat-suddenly-avoids-owner",
+      "output": "articles/cat-suddenly-avoids-owner/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "A grey or tabby cat peeking cautiously from under a couch or from a shadowed corner, ears slightly back, eyes wide, body low, watching something in the distance. Background: soft blurred silhouette of a person standing in a warmly lit room. Light: dramatic but gentle, warm background light contrasting with cooler shadow where cat hides, not scary, just mysterious. Camera: 35mm, f/2.0, cat in focus, background person heavily blurred. Composition: cat in lower foreground, blurred human figure in upper background, diagonal depth composition. Style: editorial magazine photography, ultra realistic, thoughtful narrative. Color palette: warm amber background, cool grey shadows, natural tones. No text, no watermarks, no logos, no AI artifacts. 16:9 cinematic crop."
+    },
+    {
+      "slug": "dog-frap-zoomies-after-bath",
+      "output": "articles/dog-frap-zoomies-after-bath/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "A wet medium-sized dog mid-zoomies, shaking its head and running across a bright living room floor after a bath, water droplets flying, motion blur on paws, joyful expression, tongue out. Light: bright natural indoor daylight, clean and cheerful. Camera: 35mm, f/4, motion blur on moving parts, face somewhat sharp. Composition: dog in dynamic diagonal motion across frame, water droplets catching light. Style: editorial magazine photography, ultra realistic, energetic and joyful. Color palette: bright whites, warm wood floor, sparkling water droplets. No text, no watermarks, no logos, no AI artifacts, no humans. 16:9 cinematic crop."
+    },
+    {
+      "slug": "cat-fetch-play-breeds",
+      "output": "articles/cat-fetch-play-breeds/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "A sleek Siamese or Bengal cat running low across a hardwood floor, carrying a small plush toy in its mouth, mid-stride, tail up. Light: warm side window light, golden afternoon, low angle. Camera: very low angle (floor level), 35mm, f/2.8, cat in focus, floor perspective stretching behind. Composition: cat in sharp focus at center, floor leading lines, low perspective emphasizes speed and elegance. Style: editorial magazine photography, ultra realistic, dynamic action shot. Color palette: warm honey wood tones, cat markings, natural light. No text, no watermarks, no logos, no AI artifacts, no humans. 16:9 cinematic crop."
+    },
+    {
+      "slug": "dog-watches-tv-screens",
+      "output": "articles/dog-watches-tv-screens/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "prompt": "A medium-sized dog (Golden Retriever or similar) sitting on a couch in a dark living room, head tilted slightly to one side, intently watching a glowing television screen that casts blue-white light. Light: dark room, primary light source is the TV screen glow, cool blue-white illuminating the dog's face from the front. Camera: 50mm, f/2.8, dog in focus. Composition: dog in center-right, TV screen partially visible or implied by the glow from left, dark atmospheric background. Style: editorial magazine photography, ultra realistic, cinematic mood. Color palette: cool blue TV glow, warm dog fur, dark room shadows. No text, no watermarks, no logos, no AI artifacts, no humans on screen. 16:9 cinematic crop."
     }
   ]
 }
