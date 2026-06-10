@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06",
-  "note": "Prompts ready. API quota exhausted (free tier RPD=0). Retry after UTC midnight (07:00 MSK). Run: python3 tools/generate_covers_batch.py",
+  "generated_at": "2026-06-10",
+  "note": "Prompts ready. API quota exhausted (free tier limit=0 on all image models). Placeholders created. Run: python3 tools/generate_covers_batch.py after billing is enabled.",
   "covers": [
     {
       "slug": "cat-purring-decoded",
@@ -151,6 +151,86 @@
       "output": "articles/dog-watches-tv-screens/images/cover.jpg",
       "model": "gemini-3-pro-image-preview",
       "prompt": "A medium-sized dog (Golden Retriever or similar) sitting on a couch in a dark living room, head tilted slightly to one side, intently watching a glowing television screen that casts blue-white light. Light: dark room, primary light source is the TV screen glow, cool blue-white illuminating the dog's face from the front. Camera: 50mm, f/2.8, dog in focus. Composition: dog in center-right, TV screen partially visible or implied by the glow from left, dark atmospheric background. Style: editorial magazine photography, ultra realistic, cinematic mood. Color palette: cool blue TV glow, warm dog fur, dark room shadows. No text, no watermarks, no logos, no AI artifacts, no humans on screen. 16:9 cinematic crop."
+    },
+    {
+      "slug": "cat-head-pillow-sleeping",
+      "output": "articles/cat-head-pillow-sleeping/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "status": "placeholder",
+      "added": "2026-06-10",
+      "prompt": "Photorealistic editorial magazine photograph, 16:9 cinematic crop, 2048x1152. A fluffy grey tabby cat sleeping peacefully beside a human head on a white pillow in a cozy bedroom, curled up close, eyes closed, paws tucked. Soft warm morning light streaming through sheer curtains from a nearby window, gentle bokeh, warm cream and beige tones. Cat occupies the center-right of frame, pillow and bedding fill the left. Ultra realistic, National Geographic / NYT Magazine editorial quality, shallow depth of field, natural color grading. No text, no letters, no watermarks, no logos, no UI elements, no faces of people."
+    },
+    {
+      "slug": "cat-whisker-fatigue-bowl",
+      "output": "articles/cat-whisker-fatigue-bowl/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "status": "placeholder",
+      "added": "2026-06-10",
+      "prompt": "Photorealistic editorial magazine photograph, 16:9 cinematic crop, 2048x1152. A calico adult cat eating from a flat wide white ceramic plate on a kitchen floor, low angle close-up on the cat's face and long prominent whiskers. Natural soft daylight from a window to the side, clean minimal kitchen in the blurred background. Cat positioned in center-right of frame, whiskers sharp and detailed, warm neutral tones. Ultra realistic, premium pet photography, shallow depth of field. No text, no letters, no watermarks, no logos, no UI elements, no humans."
+    },
+    {
+      "slug": "cat-stares-at-wall-night",
+      "output": "articles/cat-stares-at-wall-night/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "status": "placeholder",
+      "added": "2026-06-10",
+      "prompt": "Photorealistic editorial magazine photograph, 16:9 cinematic crop, 2048x1152. A black and white tuxedo cat sitting perfectly upright on a wooden floor in a dim living room at night, staring intently at a plain wall. The cat's silhouette is clearly visible against a soft warm amber glow from a table lamp off to the side. Moody, quiet, slightly mysterious atmosphere. Cat positioned center-left of frame, wall takes up right portion of background. Warm tungsten tones, deep shadows, ultra realistic editorial photography. No text, no letters, no watermarks, no logos, no UI elements, no humans."
+    },
+    {
+      "slug": "cat-summer-hydration-tricks",
+      "output": "articles/cat-summer-hydration-tricks/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "status": "placeholder",
+      "added": "2026-06-10",
+      "prompt": "Photorealistic editorial magazine photograph, 16:9 cinematic crop, 2048x1152. A ginger orange cat lapping water from a small pet drinking fountain on a bright kitchen countertop. Water droplets frozen mid-air around the cat's muzzle, backlit by warm summer sunlight from a window. Fresh green potted herbs blurred softly in the background. Cat positioned center of frame, mouth open at the water stream, eyes half-closed in concentration. Warm, bright, fresh summer mood. Ultra realistic, premium editorial photography, 1/1000s frozen motion. No text, no letters, no watermarks, no logos, no UI elements, no humans."
+    },
+    {
+      "slug": "cat-greeting-tail-up",
+      "output": "articles/cat-greeting-tail-up/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "status": "placeholder",
+      "added": "2026-06-10",
+      "prompt": "Photorealistic editorial magazine photograph, 16:9 cinematic crop, 2048x1152. A fluffy orange or grey tabby cat walking confidently toward the camera with its tail held high like a flagpole, in a bright modern apartment hallway. Cat making direct eye contact with the viewer, mid-stride, expressive face. Warm natural light from a window at the end of the corridor creating a gentle backlight halo. Cat positioned center-left of frame walking into center, hallway recedes into background. Ultra realistic, editorial magazine quality, warm tones, bokeh. No text, no letters, no watermarks, no logos, no UI elements, no humans."
+    },
+    {
+      "slug": "dog-eats-grass-walk",
+      "output": "articles/dog-eats-grass-walk/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "status": "placeholder",
+      "added": "2026-06-10",
+      "prompt": "Photorealistic editorial magazine photograph, 16:9 cinematic crop, 2048x1152. A Labrador or border collie dog sniffing and chewing fresh green grass in a sunny city park, close-up on the dog's face and tongue, grass blades visible between teeth. Soft warm morning sunlight, blurred lush green park background with trees. Dog positioned center-right of frame, low camera angle, eye-level with the dog on the ground. Ultra realistic, National Geographic quality, warm summer tones, shallow depth of field. No text, no letters, no watermarks, no logos, no UI elements, no humans."
+    },
+    {
+      "slug": "dog-circles-before-lying",
+      "output": "articles/dog-circles-before-lying/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "status": "placeholder",
+      "added": "2026-06-10",
+      "prompt": "Photorealistic editorial magazine photograph, 16:9 cinematic crop, 2048x1152. A medium-sized beagle or mixed breed dog in the middle of turning circles on a soft plaid blanket on a living room floor, slight motion blur on the tail and hindquarters, sharp focus on the dog's face showing concentration. Warm tungsten lamp light, cozy domestic interior, blurred sofa and bookshelf in background. Dog positioned in center of frame, blanket fills foreground, warm earth tones. Ultra realistic, premium pet photography, editorial quality. No text, no letters, no watermarks, no logos, no UI elements, no humans."
+    },
+    {
+      "slug": "dog-leg-twitching-sleep",
+      "output": "articles/dog-leg-twitching-sleep/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "status": "placeholder",
+      "added": "2026-06-10",
+      "prompt": "Photorealistic editorial magazine photograph, 16:9 cinematic crop, 2048x1152. A Jack Russell terrier or dachshund sleeping deeply on its side on a plush sofa, legs slightly bent and extended as if running, face totally relaxed with eyes closed, one ear flopped forward. Soft warm table lamp light in the background, cozy home interior, blanket texture visible. Dog fills center-right of frame, sleeping diagonally for visual dynamism. Ultra realistic, editorial quality, warm amber tones, beautiful fur detail. No text, no letters, no watermarks, no logos, no UI elements, no humans."
+    },
+    {
+      "slug": "puppy-bite-inhibition-train",
+      "output": "articles/puppy-bite-inhibition-train/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "status": "placeholder",
+      "added": "2026-06-10",
+      "prompt": "Photorealistic editorial magazine photograph, 16:9 cinematic crop, 2048x1152. A 3-month-old Labrador puppy playfully tugging a thick rope toy, a single human hand (no face, no body beyond wrist) holds the other end of the rope. Puppy's eyes bright and playful, ears floppy, tail implied to be wagging. Bright airy living room with soft natural daylight, light wood floor, blurred warm neutral interior background. Puppy positioned center-left, rope extends toward right where hand appears. Playful safe joyful mood, no aggression. Ultra realistic, editorial photography quality. No text, no letters, no watermarks, no logos, no UI elements, no human face or body."
+    },
+    {
+      "slug": "dog-crate-training-week",
+      "output": "articles/dog-crate-training-week/images/cover.jpg",
+      "model": "gemini-3-pro-image-preview",
+      "status": "placeholder",
+      "added": "2026-06-10",
+      "prompt": "Photorealistic editorial magazine photograph, 16:9 cinematic crop, 2048x1152. A golden retriever or mixed breed young dog lying relaxed and calm inside an open wire crate with a soft plush dog bed inside, a chew toy visible beside it. The crate door is open, dog is voluntarily resting inside, completely at ease. Warm natural daylight from a nearby window, cozy home environment, blurred interior background. Dog and crate positioned center of frame, safe sanctuary feeling. Ultra realistic, editorial magazine quality, warm tones. No text, no letters, no watermarks, no logos, no UI elements, no humans."
     }
   ]
 }
